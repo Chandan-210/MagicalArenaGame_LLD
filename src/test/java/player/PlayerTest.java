@@ -11,4 +11,13 @@ public class PlayerTest {
         assertEquals(5, player.getStrength());
         assertEquals(10, player.getAttack());
     }
+    // helper method to create a Player instance from user-provided input
+    private Player createPlayerFromInput(String input) {
+        Scanner scanner = new Scanner(input);
+        int health = scanner.nextInt();
+        int strength = scanner.nextInt();
+        int attack = scanner.nextInt();
+        scanner.close();
+        return new Player(health, strength, attack);
+    }
 }
