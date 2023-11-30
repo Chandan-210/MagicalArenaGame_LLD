@@ -13,7 +13,8 @@ public class MagicalArenaTest {
         MagicalArena arena = new MagicalArena(playerA, playerB);
         ArenaSimulationResult result = arena.startMatch();
 
-        assertFalse(result.isMatchInProgress());
+        //Assert that the match is not in progress after it has concluded
+        assertFalse("The match should not be in progress after it has concluded", result.isMatchInProgress());
     }
     // Helper method to create a Player instance from user-provided input
     private Player createPlayerFromInput(String input) {
