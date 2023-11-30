@@ -22,6 +22,12 @@ public class MagicalArenaDriver {
         //start the game in the arena as per the rules
         ArenaSimulationResult result = magicalArena.startMatch();
 
-
+        // Display match result
+        if (result.isMatchInProgress()) {
+            System.out.println("\nThe match is still in progress.");
+        } else {
+            System.out.println("\nThe match has concluded.");
+            System.out.println("Player A's final health: " + playerA.getHealth());
+            System.out.println("Player B's final health: " + playerB.getHealth());
     }
 }
