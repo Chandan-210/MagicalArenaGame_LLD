@@ -12,13 +12,13 @@ public class Player {
         this.attack = attack;
     }
 
-    public int setHealth(){
-        return this.health;
+    public void setHealth(){
+        this.health = health;
     }
-    public int setStrength(){
+    public void setStrength(){
         this.strength = strength;
     }
-    public int setAttack(){
+    public void setAttack(){
         this.attack = attack;
     }
     public int getHealth(){

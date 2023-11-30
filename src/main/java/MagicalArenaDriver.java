@@ -29,5 +29,18 @@ public class MagicalArenaDriver {
             System.out.println("\nThe match has concluded.");
             System.out.println("Player A's final health: " + playerA.getHealth());
             System.out.println("Player B's final health: " + playerB.getHealth());
+
+            // Further actions based on the result
+            //Get winner information and print player details
+            if (playerA.getHealth() > playerB.getHealth()) {
+                System.out.println("Player A won!");
+                System.out.println("Player B lost!");
+            } else if (playerB.getHealth() > playerA.getHealth()) {
+                System.out.println("Player B won!");
+                System.out.println("Player A lost!");
+            } else {
+                System.out.println("It's a draw between Player A and Player B!");
+            }
+        }
     }
 }
