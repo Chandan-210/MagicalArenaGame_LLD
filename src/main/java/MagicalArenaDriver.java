@@ -17,6 +17,11 @@ public class MagicalArenaDriver {
         System.out.println("Enter your attributes");
         Player playerB = player.Player.createPlayer();
 
+        //put both these players (attributes already entered) into the MagicalArena
+        MagicalArena magicalArena = new MagicalArena(playerA, playerB);
+        //start the game in the arena as per the rules
+        ArenaSimulationResult result = magicalArena.startMatch();
+
 
     }
 }
