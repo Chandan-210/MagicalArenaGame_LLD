@@ -10,6 +10,16 @@ public class Player {
         this.strength = strength;
         this.attack = attack;
     }
+
+    public int setHealth(){
+        return this.health;
+    }
+    public int setStrength(){
+        this.strength = strength;
+    }
+    public int setAttack(){
+        this.attack = attack;
+    }
     public int getHealth(){
         return health;
     }
