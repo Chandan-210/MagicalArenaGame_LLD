@@ -15,4 +15,13 @@ public class MagicalArenaTest {
 
         assertFalse(result.isMatchInProgress());
     }
+    // Helper method to create a Player instance from user-provided input
+    private Player createPlayerFromInput(String input) {
+        Scanner scanner = new Scanner(input);
+        int health = scanner.nextInt();
+        int strength = scanner.nextInt();
+        int attack = scanner.nextInt();
+        scanner.close();
+        return new Player(health, strength, attack);
+    }
 }
