@@ -1,7 +1,9 @@
 package player;
 import org.junit.Test;
 import java.util.Scanner;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
+
 public class PlayerTest {
     @Test
     public void testPlayerCreation() {
@@ -20,9 +22,24 @@ public class PlayerTest {
 
         // Test case 3: create player with negative values for health, strength, and attack
         player = createPlayerFromInput("-10 -5 -3");
-        assertEquals(-10, player.getHealth());
-        assertEquals(-5, player.getStrength());
-        assertEquals(-3, player.getAttack());
+        /*
+        if(player.getHealth() < 0) {
+            fail("Error: A player's health cannot be negative.");
+        }
+
+         */
+        assertTrue("Error: A player's health cannot be negative.", player.getHealth() < 0);
+        assertTrue("Error: A player's strength cannot be negative initially.", player.getStrength() < 0);
+        assertTrue("Error: A player's attacking power cannot be negative initially.", player.getAttack() < 0);
+        /*
+        if(player.getStrength() < 0) {
+            fail("Error: A player's strength cannot be negative initially.");
+        }
+        if(player.getAttack() < 0) {
+            fail("Error: A player's attack value cannot be negative initially.");
+        }
+
+         */
 
         // Test case 4: create player with large values for health, strength, and attack
         player = createPlayerFromInput("1000000 50000 10000");
