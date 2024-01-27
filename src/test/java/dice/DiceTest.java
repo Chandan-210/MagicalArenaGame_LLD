@@ -1,6 +1,7 @@
 package dice;
 import org.junit.Test;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertNotEquals;
 public class DiceTest {
     @Test
     public void testDiceRoll(){
@@ -16,5 +17,10 @@ public class DiceTest {
             rollResult = dice.roll();
             assertTrue("Dice Roll result should be between 1 and 6", rollResult >= 1 && rollResult <= 6);
         }
+
+        //Test case 3: tertiary test case to check if 2 consecutive dice rolls produce the same result
+        rollResult = dice.roll();
+        int rollResult1 = dice.roll();
+        assertNotEquals("Two consecutive dice rolls should not be equal, to ensure randomness.", rollResult, rollResult1);
     }
 }
