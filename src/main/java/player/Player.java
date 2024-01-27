@@ -49,8 +49,6 @@ public class Player {
         System.out.print("Enter attack: ");
         int attack = scanner.nextInt();
 
-        scanner.close();
-
         return new Player(health, strength, attack);
     }
 }

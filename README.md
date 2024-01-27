@@ -22,3 +22,63 @@ Design a Magical Arena. Every Player is defined by a “health” attribute, “
 
 3.5 And so on
 
+# Execution of the program/ game
+
+# MagicalArena Simulation
+
+## Overview
+This project simulates a magical arena where players engage in battles. Players have attributes such as health, strength, and attack. The simulation determines the winner based on the outcome of the battles.
+
+## Prerequisites
+- Java Development Kit (JDK) installed on your machine
+- Command-line interface (Terminal, Command Prompt, or equivalent)
+
+## How to Run
+
+0. Unzip the MagicalArena_Chandan.zip file on your system.
+
+1. **Open MagicalArena_Chandan on any IDE of your choice that supports Java.**
+ 
+2. On your IDE, go to File-> Folder-> Open Folder-> MagicalArena_Chandan
+
+3. Compile the code using:
+   javac *.java
+
+4. Run the simulation by running the main/ driver stored by the name "MagicalArenaDriver.java"
+   java MagicalArenaDriver
+
+5. Follow the Prompts
+Enter attributes for Player A when prompted.
+Enter attributes for Player B when prompted.
+
+6. Review Results
+
+The simulation will display the progress and outcome of the match.
+
+## SAMPLE INPUT
+
+Enter attributes for Player A:
+Health: 50
+Strength: 5
+Attack: 10
+
+Enter attributes for Player B:
+Health: 100
+Strength: 10
+Attack: 5
+
+## EXPECTED OUTPUT
+
+The match has concluded.
+Player A's final health: 20
+Player B's final health: 0
+Player A won and Player B lost!
+
+## ADDITIONAL INFO:
+This is just a prototype/ base design of the game model. This can be customized to suit the user requirements as and when required.
+Adjust the attributes and number of players as desired.
+Explore the code for customization and extension.
+Have fun exploring the magical arena!
+
+
+
