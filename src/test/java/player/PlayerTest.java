@@ -52,6 +52,18 @@ public class PlayerTest {
         assertEquals(50000, player.getStrength());
         assertEquals(10000, player.getAttack());
     }
+    @Test
+    public void testPlayerSetters(){
+        // Test case 5: test all setter methods for the player input parameters of health, strength, and attack
+        Player player = createPlayerFromInput("1500 150 250");
+        player.setHealth();
+        player.setStrength();
+        player.setAttack();
+        //check for expected vs. actual values
+        assertEquals(1500, player.getHealth());
+        assertEquals(150, player.getStrength());
+        assertEquals(250, player.getAttack());
+    }
     // helper method to create a Player instance from user-provided input
     private Player createPlayerFromInput(String input) {
         Scanner scanner = new Scanner(input);
