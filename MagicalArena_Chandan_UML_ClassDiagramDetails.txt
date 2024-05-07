@@ -1,0 +1,29 @@
+UML Class Diagram Details of Classes and Objects for "MagicalArena_Chandan":
+
+1. MagicalArena (Class):
+
+Represents the main orchestrator of the arena simulation.
+Contains private attributes playerA and playerB representing the two players.
+
+Public method startMatch() initiates the arena simulation and returns an ArenaSimulationResult.
+
+2. Player (Class):
+
+Represents a player in the arena.
+Private attributes include health, strength, and attack.
+Constructor Player(health, strength, attack) initializes a player with specified attributes.
+
+Public methods:
+getHealth(): Retrieves the player's health.
+getStrength(): Retrieves the player's strength.
+getAttack(): Retrieves the player's attack.
+reduceHealth(damage): Reduces the player's health by the specified damage.
+createPlayer(): Creates a new player with user-defined input.
+
+3. ArenaSimulationResult (Class):
+
+Represents the result of the arena simulation.
+Private attribute matchInProgress indicates whether the match is still ongoing.
+Constructor ArenaSimulationResult(matchInProgress) initializes the result.
+
+Public method isMatchInProgress() returns whether the match is still in progress.
