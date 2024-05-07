@@ -1,7 +1,3 @@
-Name - CHANDAN CHADHA
-Role - associate Software Development Engineer
-Company - Swiggy
-
 *LLD of a Magical Arena game*
 Question Statement:
 
